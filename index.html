@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- link file css -->
+    <link rel="stylesheet" href="andrei.css">
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <i class="fas fa-store"></i>
+                <h1>Shank Shoe Line</h1>
+            </div>
+
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#"><i class="fas fa-bag-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="div-text">
+                <span>Shoes for today</span>
+                <h3>All your</h3>
+                <h1>Sneakers are here</h1>
+                <p>Just Do It</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            
+            <div class="div-img">
+                <img id="big-image" src="ja1.png" alt="">
+            </div>
+
+            <div class="small-img">
+                <img onclick="myShoes('gt1.png')" src="gt1.png" alt="">
+                <img onclick="myShoes('luka.png')" src="luka.png" alt="">
+                <img onclick="myShoes('elevate.png')" src="elevate.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bigImage = document.getElementById('big-image');
+
+        function myShoes(shoes){
+            bigImage.src = shoes;
+        }
+    </script>
+</body>
+</html>
